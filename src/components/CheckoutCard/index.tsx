@@ -25,7 +25,7 @@ export function CheckoutCard({
   const { updateCartItemQuantity, removeFromCart } = useContext(CartContext);
   return (
     <>
-      <MobileContainer key={id} data-testid="checkout">
+      <MobileContainer key={id}>
         <CardContentTop>
           <Image src={photo}></Image>
           <RemoveButton onClick={() => removeFromCart(id)}>X</RemoveButton>
